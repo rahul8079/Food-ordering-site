@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outer-container {
+    display: flex;
+}
+
+#add-category-form {
+    flex:1;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#add-category-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#add-category-form input[type="text"],
+#add-category-form select,
+#add-category-form textarea {
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+#add-category-form input[type="file"] {
+    margin-top: 5px;
+}
+
+#add-category-form input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#add-category-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#add-category-form::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-family: Verdana, sans-serif;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid gainsboro;
+}
+
+th {
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    background-color: #333;
+    font-size: 14px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: lightseagreen;
+    color: white;
+    cursor: pointer;
+}
+
+td:nth-child(1),
+td:nth-child(4),
+td:nth-child(5) {
+    white-space: nowrap;
+}
+
+td img {
+    max-width: 60px;
+    max-height: 60px;
+}
+
+#delete {
+
+    text-decoration: none;
+    padding: 8px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#edit {
+
+    text-decoration: none;
+    padding: 8px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/*search bar*/
+
+/* Style for the input group container */
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the search input */
+.input-group input[type="text"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    font-size: 16px;
+}
+
+/* Style for the search button */
+.input-group button[type="submit"] {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-group button[type="submit"]:hover {
+    background-color: #0069d9;
+}
+
+/* Style for the search icon */
+.input-group i.fa-search {
+    margin-right: 0.5rem;
+}
